@@ -20,7 +20,7 @@
      }
 
 
-     .portfolios {
+     .projects {
           grid-template-columns: 1fr !important;
           padding-bottom: 6rem;
      }
@@ -84,7 +84,7 @@
           }
      }
 
-     .portfolios {
+     .projects {
           grid-template-columns: 1fr 1fr;
      }
 
@@ -156,7 +156,7 @@
           width: 100%;
           background-color: var(--color-grey-5);
           .control {
-               margin: .6rem 1.25rem;
+               margin: .6rem 1rem;
           }
      }
 

@@ -6,8 +6,8 @@
 }
 
 :root {
-  --color-primary: #191d2b;
-  --color-secondary: #27AE60;
+  --color-primary: #13161e;
+  --color-secondary: #1E90FF;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -16,14 +16,13 @@
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
-  --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-secondary: #FDAE44;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -32,7 +31,6 @@
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
   --color-grey-5: #f8f8f8;
-  --color-grey-6: #12181b;
 }
 
 body {
@@ -403,24 +401,24 @@ section {
   text-align: center;
 }
 
-.portfolios {
+.projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }
-.portfolios .portfolio-item {
+.projects .project-item {
   position: relative;
   border-radius: 15px;
 }
-.portfolios .portfolio-item img {
+.projects .project-item img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
 }
-.portfolios .portfolio-item .hover-items {
+.projects .project-item .hover-items {
   width: 100%;
   height: 100%;
   background-color: var(--color-secondary);
@@ -436,17 +434,17 @@ section {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
 }
-.portfolios .portfolio-item .hover-items h3 {
+.projects .project-item .hover-items h3 {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
 }
-.portfolios .portfolio-item .hover-items .icons {
+.projects .project-item .hover-items .icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.portfolios .portfolio-item .hover-items .icons .icon {
+.projects .project-item .hover-items .icons .icon {
   background-color: var(--color-primary);
   border-radius: 50%;
   width: 50px;
@@ -458,19 +456,19 @@ section {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.portfolios .portfolio-item .hover-items .icons .icon i {
+.projects .project-item .hover-items .icons .icon i {
   font-size: 1.5rem;
   color: var(--color-white);
   margin: 0 1rem;
 }
-.portfolios .portfolio-item .hover-items .icons .icon:hover {
+.projects .project-item .hover-items .icons .icon:hover {
   background-color: var(--color-white);
 }
-.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+.projects .project-item .hover-items .icons .icon:hover i {
   color: var(--color-primary);
 }
 
-.portfolio-item:hover .hover-items {
+.project-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
 }
@@ -707,7 +705,7 @@ section {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
-  .portfolios {
+  .projects {
     grid-template-columns: 1fr !important;
     padding-bottom: 6rem;
   }
@@ -757,7 +755,7 @@ section {
   .about-container .right-about {
     padding-top: 2.5rem;
   }
-  .portfolios {
+  .projects {
     grid-template-columns: 1fr 1fr;
   }
   .blogs {
@@ -814,7 +812,7 @@ section {
     background-color: var(--color-grey-5);
   }
   .controls .control {
-    margin: 0.6rem 1.25rem;
+    margin: 0.6rem 1rem;
   }
 }
 @media screen and (max-width: 700px) {
